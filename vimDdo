@@ -1,0 +1,31 @@
+set number
+set cindent
+syntax on
+set autoindent
+set ts=4
+set sw=4
+set sts=4
+set mouse=a
+
+"""""""""Vundle!"""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+	Plugin 'VundleVim/Vundle.vim'
+	Plugin 'nanotech/jellybeans.vim'
+	Plugin 'scrooloose/syntastic'
+	Plugin 'scrooloose/nerdtree'
+	Plugin 'shougo/neocomplcache.vim'
+call vundle#end()            " required
+filetype plugin indent on    " required
+"let g:neocomplcache_enable_at_startup = 1
+set background=dark
+colorscheme jellybeans
+map <C-j> <C-W>j
+map <C-K> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+
